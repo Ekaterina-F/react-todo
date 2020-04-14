@@ -1,0 +1,71 @@
+
+.app-todo-items {
+  border-bottom: 1px solid #cecece;
+  padding: 8px;
+}
+
+.todos-items-header-title {
+  color: deepskyblue;
+  cursor: pointer;
+}
+
+.todos-items-body {
+  margin-top: 4px;
+  width: 100%;
+  text-align: center;
+}
+
+.todos-items-body-buttons {
+  width: 50%;
+  text-align: right;
+}
+
+.todos-items-body-text {
+  width: 50%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.todos-items-body-text, .todos-items-body-buttons {
+  display: inline-block;
+}
+
+.buttons {
+  border-radius: 4px;
+  height: 27px;
+  width: 37px;
+  outline: none;
+  cursor: pointer;
+  background: white;
+}
+
+#button-trash {
+  border: 1px solid #c70000;
+  margin-right: 5px;
+}
+
+#button-trash:hover {
+  background: #dbdbdb;
+}
+
+#button-check {
+  border: 1px solid green;
+}
+
+#button-check:hover {
+  background: #dbdbdb;
+}
+
+#button-edit {
+  border: 1px solid #cc8500;
+  margin-right: 5px;
+}
+
+#button-edit:hover {
+  background: #dbdbdb;
+}
+
+.app-todo-items.done .todos-items-body-text {
+  text-decoration: line-through;
+  text-decoration-color: tomato;
+}

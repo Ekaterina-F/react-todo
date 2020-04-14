@@ -1,0 +1,16 @@
+#out-btn button {
+  border: 1px solid deepskyblue;
+  border-radius: 4px;
+  height: 27px;
+  width: 53px;
+  outline: none;
+  cursor: pointer;
+  background: deepskyblue;
+  color: white;
+  float: right;
+}
+
+#out-btn button:hover {
+  background: #dbdbdb;
+}
+

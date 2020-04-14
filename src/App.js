@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import TodoPage from './todo-page';
+import RegPage from "./reg-page";
+import AuthPage from "./auth-page";
+import EditTodoPage from "./edit-todo-page/edit-todo-page";
+import "./App.css"
+import {createBrowserHistory} from 'history';
+import {Redirect, Route, Router, Switch} from "react-router-dom";
+import {PATH} from "./route";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <Router history={createBrowserHistory()}>
+        <Switch>
+          <Route path={PATH.TODO} component={TodoPage}/>
+          <Route path={PATH.REG} component={RegPage}/>
+          <Route path={PATH.AUTH} component={AuthPage}/>
+          <Route path={PATH.EDIT} component={EditTodoPage}/>
+          <Redirect from='/' to={PATH.TODO}/>
+        </Switch>
+      </Router>
+    )
+  }
 }
 
-export default App;
+export default App

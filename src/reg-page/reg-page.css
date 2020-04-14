@@ -1,0 +1,53 @@
+
+#reg-form {
+  position: relative;
+  left: 35%;
+}
+
+#reg-form input {
+  height: 20px;
+  outline: none;
+  padding: 3px 3px 3px 6px;
+  border: 1px solid #cecece;
+  border-radius: 4px;
+  display: flex;
+  margin-bottom: 10px;;
+}
+
+#auth-ref {
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: underline;
+  color: deepskyblue;
+  cursor: pointer;
+}
+
+#reg-btn button {
+  outline: none;
+  margin-right: 5px;
+  padding: 5px;
+  border: 1px solid #cecece;
+  border-radius: 4px;
+  cursor: pointer;
+  background: white;
+  position: relative;
+  left: 38%;
+}
+
+#reg-btn button:hover {
+  background: #dbdbdb;
+}
+
+.alert-danger {
+  padding: 8px;
+  background-color: #f8d7da;
+  border-radius: 4px;
+  border: 1px solid #f5c6cb;
+}
+
+.alert-success {
+  padding: 8px;
+  background-color: #d4edda;
+  border-radius: 4px;
+  border: 1px solid #c3e6cb;
+}

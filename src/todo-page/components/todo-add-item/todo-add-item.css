@@ -1,0 +1,30 @@
+#todo-add-item {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+#todo-add-item input {
+  height: 23px;
+  min-width: calc(100% - 2px - 9px - (30px + 5px));
+  outline: none;
+  padding: 3px 3px 3px 6px;
+  border: 1px solid #cecece;
+  border-radius: 4px;
+}
+
+
+#todo-add-item button {
+  height: 30px;
+  width: 30px;
+  outline: none;
+  margin-right: 5px;
+  border: 1px solid deepskyblue;
+  border-radius: 4px;
+  cursor: pointer;
+  background: white;
+}
+
+#todo-add-item button:hover {
+  background: #dbdbdb;
+}
+
